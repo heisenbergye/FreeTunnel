@@ -25,9 +25,13 @@ sevice access url: https://3d3c76fbf3a01ec384.gradio.live, it will keep availabl
         env:
         - name: SERVICE_PORT
           value: '3000'
-      - image: docker.io/grafana/grafana:9.3.6
+      - name: grafana
+        image: docker.io/grafana/grafana:9.3.6
         imagePullPolicy: IfNotPresent
-        name: grafana-core
+        ports:
+        - containerPort: 3000
+          name: http-grafana
+          protocol: TCP
 ......
 
 ```
