@@ -14,7 +14,7 @@ sevice access url: https://3d3c76fbf3a01ec384.gradio.live, it will keep availabl
 
 ### kubernetes
 
-1. add container free-tunnel as grafna container sidecar
+1. deploy container free-tunnel as sidecar to expose grafna
 ```
 ......
     spec:
