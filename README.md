@@ -6,7 +6,7 @@ FreeTunnel is a powerful tool for exposing your private services to the Internet
 
 ### CLI
 
-expose local grafna
+Execute on the EC2 instance where Grafana is deployed to expose the local Grafana service.
 ```
 $ python3 cli/free-tunnel.py -p 3000                                
 sevice access url: https://3d3c76fbf3a01ec384.gradio.live, it will keep available for 72h
@@ -14,7 +14,7 @@ sevice access url: https://3d3c76fbf3a01ec384.gradio.live, it will keep availabl
 
 ### kubernetes
 
-1. deploy container free-tunnel as sidecar to expose grafna
+1. add free-tunnel as sidecar container sharing network namespace with grafna
 ```
 ......
     spec:
