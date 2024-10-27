@@ -1,4 +1,7 @@
 # FreeTunnel
+
+FreeTunnel是一款免费、安全、高效的内网穿透解决方案，无需复杂配置，即可让您轻松将内网服务暴露到互联网，适合开发测试和临时分享，支持命令行和容器两种使用方式。
+
 FreeTunnel is a powerful tool for exposing your private services to the Internet via subdomains base on `gradio.live`.It provides URLs valid for 72 hours. With both command-line and container options available, setup is quick and easy. Whether for development testing or temporary sharing, FreeTunnel offers a free, secure, and efficient solution for network tunneling. Connect your local services to the world instantly with FreeTunnel!
 
 ### CLI
