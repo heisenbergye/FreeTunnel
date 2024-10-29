@@ -6,6 +6,13 @@ FreeTunnel is a powerful tool for exposing your private services to the Internet
 
 ### CLI
 
+service bind to 0.0.0.0
+```
+$ ss -ltnp
+State            Recv-Q           Send-Q                       Local Address:Port                       Peer Address:Port           Process                                       
+LISTEN           0                4096                                     *:9090                                  *:*                                                    
+LISTEN           0                4096                                     *:3000                                  *:* 
+```
 Execute on the EC2 instance where Grafana is deployed to expose the local Grafana service.
 ```
 $ python3 cli/free-tunnel.py -p 3000                                
