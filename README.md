@@ -17,6 +17,8 @@ LISTEN           0                4096                                     *:300
 ```
 $ python3 cli/free-tunnel.py -p 3000                                
 sevice access url: https://3d3c76fbf3a01ec384.gradio.live, it will keep available for 72h
+
+$ sudo docker run -e SERVICE_PORT=3000 --network=host docker.io/heisenbergye/free-tunnel
 ```
 
 ### kubernetes
